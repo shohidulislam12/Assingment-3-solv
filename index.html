@@ -20,8 +20,8 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: 'rgb(139, 195, 74)',
-                        secondary: 'rgb(17, 17, 17)',
+                        primary: '#ABEF5F80',
+                        secondary: '#ABEF5F',
                         body: 'rgb(248, 246, 243)',
                         accent: 'rgb(106, 151, 57)',
                         body_neutral: 'rgb(51, 51, 51)',
@@ -47,7 +47,48 @@
  </style>
 </head>
 <body>
-<header>
+<header class="text-black bg-[#FFFFFF]">
+    <!-- navigation bar -->
+<nav class="container mx-auto">
+    <div class="navbar bg-base-100">
+        <div class="navbar-start gap-2">
+
+            <img class="w-10 h-10 rounded-full text-black bg-primary" src="assets/icons8-arrow-up-right-24.png" alt="">  <a href="#" class="btn  text-2xl font-bold ">Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-black    hover:text-[#84cc16]  font-semibold"><a>Home</a></li>
+            <li class="text-gray-500 hover:text-[#84cc16] font-semibold"><a>Services</a></li>
+            <li class="text-gray-500 hover:text-[#84cc16] font-semibold"><a>Portfolio</a></li>
+            <li class="text-gray-500 hover:text-[#84cc16] font-semibold"><a>Blogs</a></li>
+            <li class="text-gray-500 hover:text-[#84cc16] font-semibold"><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+            <div class="dropdown sm:order-2 ">
+                <div tabindex="0" role="button" class=" lg:hidden">
+     
+                    <i class="fa-solid fa-bars rounded-full p-5 bg-slate-100"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 right-0 shadow">
+                  <li class="text-black    hover:text-[#84cc16]  font-semibold"><a>Home</a></li>
+                  <li class="text-gray-500 hover:text-[#84cc16] font-semibold"><a>Services</a></li>
+                  <li class="text-gray-500 hover:text-[#84cc16] font-semibold"><a>Portfolio</a></li>
+                  <li class="text-gray-500 hover:text-[#84cc16] font-semibold"><a>Blogs</a></li>
+                  <li class="text-gray-500 hover:text-[#84cc16] font-semibold"><a>Contact Us</a></li>
+                </ul>
+              </div >
+          <span class="flex items-center justify-between hidden sm:flex  sm:order-1 ">
+            <i class="fa-solid fa-magnifying-glass  p-2 bg-[#f8fafc] rounded-full "></i>
+            <i class="fa-solid fa-cart-plus  p-2 bg-[#f8fafc] rounded-full "></i>
+      <a class="btn bg-secondary hidden sm:flex rounded-3xl" href="#">Book Consult  <img class="rounded-full  bg-black p-0 " src="assets/arrow.png " alt="">   </a>    
+          </span>
+        </div>
+      </div>
+</nav>
+<!-- end nav section -->
 
 
 </header>
@@ -66,7 +107,7 @@
 </main>
 <footer>
 
-    
+
 </footer>
 
 </body>
